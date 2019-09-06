@@ -1,0 +1,7 @@
+.ui.six.cards
+  = partial :counter, locals: { klass: 'book', count: data.rol.count, title: 'Partidas de Rol' }
+  = partial :counter, locals: { klass: 'bullhorn', count: data.event.count, title: 'Charlas y Eventos' }
+  = partial :counter, locals: { klass: 'edit outline', count: data.editorial.count, title: 'Editoriales' }
+  = partial :counter, locals: { klass: 'hand point up outline', count: data.society.count, title: 'Asociaciones' }
+  = partial :counter, locals: { klass: 'film', count: data.cosplay.count, title: 'Cosplayers' }
+  = partial :counter, locals: { klass: 'pencil alternate', count: data.ilustrator.count, title: 'Ilustradores' }

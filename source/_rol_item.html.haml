@@ -1,0 +1,23 @@
+.ui.segment.rol_item
+  .ui.red.ribbon.label
+    %a{href: rol_date_path(date)}
+      %i.calendar.alternate.outline.icon
+      = show_date(date)
+  .ui.header
+    .content= title
+  .ui.items
+    .item
+      .image
+        %img{src: image}
+      .content
+        .meta
+          .ui.label
+            %a{href: rol_system_path(system)}= data.rol_system[system]
+        .description
+          %p= description
+        .extra
+          - if url.presence
+            %a.ui.right.floated.red.basic.button{href: url, target: '_blank'} Inscríbete a la partida
+          - else
+            .ui.right.floated.red.basic.button.disabled Inscripción todavía no abierta
+

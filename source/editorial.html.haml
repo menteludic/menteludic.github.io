@@ -1,0 +1,12 @@
+---
+layout: section
+---
+.ui.header.dividing
+  %i.edit.outline.icon
+  .content Editoriales
+.ui.grid.stackable.four.column
+  - data.editorial.sort_by{|e| e[:name]}.each do |editorial|
+    .column= partial(:editorial_item, locals: editorial)
+
+
+

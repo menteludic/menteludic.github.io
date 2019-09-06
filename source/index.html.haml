@@ -1,0 +1,63 @@
+---
+layout: frontend
+---
+= content_for :main do
+  .ui.raised.segment
+    .ui.items
+      .item
+        .image
+          %img.ui.image{src: '/images/puertas_abiertas_2019.png'}
+        .content
+          .header Día de puertas abiertas!
+          .meta
+            %i.calendar.icon
+            26-10-2019
+          .description
+            %p
+              Desde las 17:00h hasta las 2:00h de la madrugada podrás descubrir nuevos juegos y disfrutar con tus amigos o tu familia de este maravilloso mundo.
+              %br
+              Os esperamos en:
+            %p
+              %b Asociación Portal Lúdico
+              %br
+              Avda. Honorio Lozano, 24
+              %br
+              28400 Collado Villalba (Madrid)
+              %br
+              Tlf.: 608 720 355
+          .extra
+            %h3.header (Se permitirá la entrada hasta completar el aforo permitido)
+
+  .ui.raised.segment.center.aligned
+    %h2 Finaliza con éxito Menteludic 2019
+    .description
+      %p
+        Finalizó el evento de Menteludic 2019 en Moralzarzal y lo primero es dar las gracias a todos:
+      %p
+        Al ayuntamiento de Moralzarzal, a las editoriales que asistieron, a los ilustradores, a las cosplayers, a las asociaciones, etc...
+        %br
+        Y sobre todo a la gente que se acercó a disfrutar, con nosotros, de un rato de ocio y diversión en familia.
+      %p
+        Para todos nosotros ha sido una experiencia muy positiva que esperamos repetir en un futuro próximo.
+
+      %h2
+        Muchísimas gracias a todos!!
+        %br
+        Esperamos veros pronto de nuevo!!
+      %img.ui.image{src: '/images/grupo.jpg'}
+  .ui.basic.segment
+    = partial :counters
+
+  -# .ui.basic.segment
+  -#   = partial :activity_list
+  -#   %h4.header
+  -#     %i.download.icon
+  -#     %a{href: '/files/Calendario_Actividades_v7.pdf', target: '_blank'} Descárgate la programación completa
+  -# .ui.basic.segment
+  -#   .ui.text.container.center.aligned
+  -#     %a{href: '/concurso_microrrelatos'}
+  -#       .ui.medium.image
+  -#         %img{src: '/images/concurso_microrrelatos.jpg'}
+
+= content_for :sidebar do
+  = partial :sidebar

@@ -1,0 +1,10 @@
+---
+layout: section
+---
+.ui.header.dividing
+  %i.film.icon
+  .content Cosplayers
+.ui.grid.stackable.four.column
+  - data.cosplay.sort_by{|cosplay| cosplay[:name]}.each do |cosplay|
+    .column= partial(:cosplay_item, locals: cosplay)
+

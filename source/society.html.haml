@@ -1,0 +1,10 @@
+---
+layout: section
+---
+.ui.header.dividing
+  %i.hand.point.up.outline.icon
+  .content Sociedades
+.ui.grid.stackable.four.column
+  - data.society.sort_by{|e| e[:name]}.each do |society|
+    .column= partial(:society_item, locals: society)
+

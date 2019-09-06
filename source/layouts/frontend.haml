@@ -1,0 +1,23 @@
+%html
+  %head= partial(:header)
+  %body
+    .ui.large.top.fixed.hidden.menu
+      .ui.container
+        = partial(:menu, locals: { positive: true, index: true })
+    .ui.vertical.inverted.sidebar.menu
+      = partial(:menu, locals: { positive: true, index: true })
+
+    .pusher
+      .ui.inverted.vertical.masthead.center.aligned.segment
+        .ui.container
+          .ui.large.secondary.inverted.pointing.menu
+            %a.toc.item
+              %i.sidebar.icon
+            = partial(:menu, locals: { positive: false, index: true })
+
+      .ui.grid.stackable.divided.container
+        .row
+          .eleven.wide.column.frontend= yield_content :main
+          .five.wide.column= yield_content :sidebar
+
+    = partial(:footer)

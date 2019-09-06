@@ -1,0 +1,14 @@
+---
+layout: section
+---
+.segments
+  .ui.basic.segment
+    .ui.header.dividing
+      %i.cubes.icon
+      .content Imágenes
+    %ul.ui.items
+      - data.credits.each do |credit|
+        = partial(:credit_item, locals: credit)
+
+
+

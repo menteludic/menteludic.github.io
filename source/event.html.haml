@@ -1,0 +1,10 @@
+---
+layout: section
+---
+.ui.header.dividing
+  %i.bullhorn.icon
+  .content Charlas/Eventos
+.ui.grid.stackable.two.column
+  - data.event.sort_by{|e| DateTime.parse(e[:date])}.each do |event|
+    .column= partial(:event_item, locals: event)
+

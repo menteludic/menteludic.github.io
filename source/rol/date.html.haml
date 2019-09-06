@@ -1,0 +1,10 @@
+---
+layout: section
+---
+- date ||= DateTime.now.to_s
+.ui.cubes.header.dividing
+  %i.book.icon
+  .content= "Partidas de Rol el #{date}"
+.ui.grid.stackable.two.column
+  - data.rol.select{|r| r[:date] == date}.each do |rol|
+    .column= partial(:rol_item, locals: rol)

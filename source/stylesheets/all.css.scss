@@ -1,0 +1,191 @@
+/*= require 'semantic' */
+
+body {
+  font-family: 'Rubik', serif;
+}
+
+.hidden {
+  &.menu {
+    display: none;
+  }
+}
+
+.masthead {
+  &.segment {
+    padding: 1em 0em;
+  }
+
+  .logo.item img {
+    margin-right: 1em;
+  }
+
+  .ui.menu {
+    .ui.button {
+      margin-left: 0.5em;
+    }
+  }
+
+  h1.ui.header {
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+  }
+
+  .mainlogo{
+    background-image:  url('../images/logo_menteludic_negativo_vertical.png') !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 200px;
+  }
+}
+
+.ui {
+  &.vertical {
+    &.stripe {
+      padding: 8em 0em;
+
+      h3 {
+        font-size: 2em;
+      }
+      .button + h3, p + h3 {
+        margin-top: 3em;
+      }
+      .floated.image {
+        clear: both;
+      }
+      p {
+        font-size: 1.33em;
+      }
+      .horizontal {
+        &.divider {
+          margin: 3em 0em;
+        }
+      }
+    }
+  }
+}
+
+.quote {
+  &.stripe {
+    &.segment {
+      padding: 0em;
+
+      .grid {
+        .column {
+          padding-top: 5em;
+          padding-bottom: 5em;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  &.segment {
+    padding: 5em 0em;
+  }
+}
+
+.secondary.pointing.menu {
+  .toc.item {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .ui.fixed.menu {
+    display: none !important;
+  }
+  .secondary.pointing.menu .item,
+  .secondary.pointing.menu .menu {
+    display: none;
+  }
+  .secondary.pointing.menu .toc.item {
+    display: block;
+  }
+  .masthead h1.ui.header {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+  .masthead h2 {
+    margin-top: 0.5em;
+    font-size: 1.5em;
+  }
+}
+
+
+.logo {
+  height: 30px;
+  width: auto !important;
+}
+
+
+.pushable .ui.inverted.vertical.masthead.center.aligned.segment {
+  padding-top: 0em;
+  padding-bottom: 0em;
+}
+
+.pusher{
+  .frontend {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    .frontend_item {
+      margin-bottom: 0em;
+      margin-top: 0em;
+    }
+
+    .counter_card {
+      box-shadow: none;
+    }
+  }
+
+  .section {
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+
+    .cosplay_item {
+      min-height: 250px;
+      .ui.image {
+        width: 150px;
+      }
+    }
+
+    .editorial_item {
+      min-height: 250px;
+      .ui.image {
+        width: 150px;
+      }
+    }
+
+    .rol_item {
+      .ui.label a{
+        opacity: 1 !important;
+      }
+      .ui.image {
+        width: 150px;
+      }
+    }
+
+    .shop_item {
+      min-height: 250px;
+      .ui.image {
+        width: 150px;
+      }
+    }
+
+    .society_item {
+      min-height: 250px;
+      .ui.image {
+        width: 150px;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.item
+  - if locals['link']
+    %a{href: locals['link']['url']}= title
+  - else
+    = title
+
+-# .ui.basic.segment.frontend_item
+-#   .ui.header.dividing
+-#     %i.cubes.icon
+-#     .content= title
+-#   .ui.items
+-#     .item
+-#       -# .ui.medium.rounded.image
+-#       -#   %img{src: image}
+-#       -# .content
+-#       -#   .meta
+-#       -#   .description
+-#       -#     %p= description
+-#       -#   .extra
+-#       -#     - if locals['link']
+-#       %a.ui.right.floated.red.basic.button{href: link[:url]}= link[:label]

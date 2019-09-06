@@ -1,0 +1,12 @@
+---
+layout: section
+---
+.ui.header.dividing
+  %i.pencil.alternate.icon
+  .content Ilustradores
+.ui.grid.stackable.four.column
+  - data.ilustrator.sort_by{|e| transliterate(e[:name])}.each do |ilustrator|
+    .column= partial(:ilustrator_item, locals: ilustrator)
+
+
+

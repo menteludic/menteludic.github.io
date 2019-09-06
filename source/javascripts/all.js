@@ -4,7 +4,7 @@ $(document)
   .ready(function() {
 
     // fix menu when passed
-    $('.masthead')
+    $('.masthead .ui.menu')
       .visibility({
         once: false,
         onBottomPassed: function() {
@@ -21,5 +21,8 @@ $(document)
       .sidebar('attach events', '.toc.item')
     ;
 
+    $('.tabular.activity_list .item').tab();
+
+    $('.ui.embed').embed();
   })
 ;

@@ -1,0 +1,16 @@
+- if positive
+  - logo = "/images/logo_menteludic_positivo_horizontal.png"
+- else
+  - logo = "/images/logo_menteludic_negativo_horizontal.png"
+
+- if index
+  %a.item{href: '/'}
+    %img.logo{src: logo}
+%a.item{href: '/'} Inicio
+%a.item{href: '/rol'} Partidas de Rol
+%a.item{href: '/event'} Charlas/Eventos
+%a.item{href: '/editorial'} Editoriales
+%a.item{href: '/society'} Asociaciones
+%a.item{href: '/shop'} Tiendas
+%a.item{href: '/cosplay'} Cosplayers
+%a.item{href: '/ilustrator'} Ilustradores

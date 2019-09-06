@@ -1,0 +1,11 @@
+AllCops:
+  Include:
+    - 'Gemfile'
+  Exclude:
+    - 'script/**/*'
+    - 'vendor/**/*'
+    - 'bin/**/*'
+Documentation:
+  Enabled: false
+ClassAndModuleChildren:
+  Enabled: false

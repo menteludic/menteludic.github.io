@@ -15,6 +15,11 @@ page '/*.txt', layout: false
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
+data.rol.each do |rol|
+  proxy "/rol/system/#{rol[:system]}.html", '/rol/system.html', locals: { system: rol[:system] }
+  proxy "/rol/date/#{rol[:date]}.html", '/rol/date.html', locals: { date: rol[:date] }
+end
+
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
@@ -23,11 +28,34 @@ page '/*.txt', layout: false
 # Methods defined in the helpers block are available in templates
 # https://middlemanapp.com/basics/helper-methods/
 
-# helpers do
-#   def some_helper
-#     'Helping'
-#   end
-# end
+helpers do
+  def rol_system_path(system)
+    "/rol/system/#{system}.html"
+  end
+
+  def rol_date_path(system)
+    "/rol/date/#{system}.html"
+  end
+
+  def day_name(date)
+    ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'][DateTime.parse(date).strftime('%w').to_i]
+  end
+
+  def show_date(date)
+    "#{day_name(date)} #{DateTime.parse(date).strftime('%e, %H:%M')}"
+  end
+
+  def show_hour(date)
+    DateTime.parse(date).strftime('%H:%M')
+  end
+
+  def transliterate(text)
+    text.tr(
+      "ÀÁÂÃÄÅàáâãäåĀāĂăĄąÇçĆćĈĉĊċČčÐðĎďĐđÈÉÊËèéêëĒēĔĕĖėĘęĚěĜĝĞğĠġĢģĤĥĦħÌÍÎÏìíîïĨĩĪīĬĭĮįİıĴĵĶķĸĹĺĻļĽľĿŀŁłÑñŃńŅņŇňŉŊŋÒÓÔÕÖØòóôõöøŌōŎŏŐőŔŕŖŗŘřŚśŜŝŞşŠšſŢţŤťŦŧÙÚÛÜùúûüŨũŪūŬŭŮůŰűŲųŴŵÝýÿŶŷŸŹźŻżŽž",
+      "AAAAAAaaaaaaAaAaAaCcCcCcCcCcDdDdDdEEEEeeeeEeEeEeEeEeGgGgGgGgHhHhIIIIiiiiIiIiIiIiIiJjKkkLlLlLlLlLlNnNnNnNnnNnOOOOOOooooooOoOoOoRrRrRrSsSsSsSssTtTtTtUUUUuuuuUuUuUuUuUuUuWwYyyYyYZzZzZz"
+    )
+  end
+end
 
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
@@ -46,7 +74,7 @@ activate :blog do |blog|
   # Matcher for blog source files
   blog.sources = "posts/{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
-  blog.layout = 'layouts/layout'
+  blog.layout = 'layouts/section'
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = "{year}.html"
@@ -54,8 +82,8 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
   # blog.default_extension = ".markdown"
 
-  blog.tag_template = 'tag.html'
-  blog.calendar_template = 'calendar.html'
+  # blog.tag_template = 'tag.html'
+  # blog.calendar_template = 'calendar.html'
 
   # Enable pagination
   # blog.paginate = true
@@ -74,12 +102,28 @@ configure :development do
   activate :sprockets
   # activate :syntax, :line_numbers => true
   activate :directory_indexes
-  activate :search_engine_sitemap
+  # activate :search_engine_sitemap
+  activate :deploy do |deploy|
+    deploy.build_before = true
+    deploy.deploy_method = :ftp
+    deploy.options = [{
+      host: '39091951.servicio-online.net',
+      path: '/menteludic.com',
+      user: ENV['USER'],
+      password: ENV['PASSWORD']
+    # }, {
+    #   host: '39091951.servicio-online.net',
+    #   path: '/menteludic.es',
+    #   user: 'middleman',
+    #   password: 'Asoc@2017'
+    }]
+  end
+
   # activate :deploy do |deploy|
   #   deploy.deploy_method = :git
   #   # Optional Settings
   #   # deploy.remote   = 'custom-remote' # remote name or git url, default: origin
-  #   deploy.branch   = 'master' # default: gh-pages
+  #   deploy.branch = 'master' # default: gh-pages
   #   # deploy.strategy = :submodule      # commit strategy: can be :force_push or :submodule, default: :force_push
   #   # deploy.commit_message = 'custom-message'      # commit message (can be empty), default: Automated commit at `timestamp` by middleman-deploy `version`
   #   deploy.build_before = true
@@ -95,11 +139,9 @@ configure :build do
   activate :minify_javascript
   # activate :syntax, :line_numbers => true
   activate :directory_indexes
-  activate :search_engine_sitemap
+  # activate :search_engine_sitemap
 end
 
-activate :deploy do |deploy|
-  deploy.method = :git
-  deploy.branch = 'master'
-  deploy.build_before = true
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-147211365-1' # Replace with your property ID.
 end

@@ -1,0 +1,10 @@
+---
+layout: section
+---
+.ui.header.dividing
+  %i.shopping.basket.icon
+  .content Tiendas
+.ui.grid.stackable.four.column
+  - data.shop.each do |shop|
+    .column= partial(:shop_item, locals: shop)
+

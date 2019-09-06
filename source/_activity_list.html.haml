@@ -1,0 +1,39 @@
+- current_day = 18
+.ui.header.dividing
+  %i.pencil.icon
+  .content Apúntate a las Actividades
+.ui.tabular.menu.activity_list
+  .item{'data-tab': '18', class: current_day == 18 ? 'active' : ''} Viernes 18
+  .item{'data-tab': '19', class: current_day == 19 ? 'active' : ''} Sábado 19
+  .item{'data-tab': '20', class: current_day == 20 ? 'active' : ''} Domingo 20
+- [18, 19, 20].each do |day|
+  - items = (data.rol + data.event).select{|i| DateTime.parse(i[:date]).day == day}
+  .ui.tab{'data-tab': day.to_s, class: day == current_day ? 'active': ''}>
+    .ui.list
+      - items.sort_by{|item| DateTime.parse(item[:date])}.each do |item|
+        .item
+          - if item[:system] # rol
+            .right.floated.content
+              - if item[:url].presence
+                %a.ui.red.basic.button.tiny{href: item[:url], target: '_blank'} Inscríbete
+            %i.book.icon
+            .content
+              .header
+                = show_hour(item[:date])
+                = item[:title]
+              .description
+                %a{href: '/rol'}= "Rol: #{data.rol_system[item[:system]]}"
+
+          - else
+            .right.floated.content
+              - if item[:url].presence
+                %a.ui.red.basic.button.tiny{href: item[:url], target: '_blank'} Inscríbete
+            %i.bullhorn.icon
+            .content
+              .header
+                = show_hour(item[:date])
+                = item[:title]
+              .description
+              %a{href: '/event'} Evento
+
+

@@ -1,0 +1,19 @@
+.ui.segment.event_item
+  - if date.presence
+    .ui.red.ribbon.label
+      %i.calendar.alternate.outline.icon
+      = show_date(date)
+  .ui.header
+    .content= title
+  .ui.items
+    .item
+      .image
+        %img{src: image}
+      .content
+        .meta
+        .description
+          %p= description
+        .extra
+          - if url.presence
+            %a.ui.right.floated.red.basic.button{href: url, target: '_blank'} Inscríbete al evento
+

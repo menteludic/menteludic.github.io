@@ -1,0 +1,106 @@
+/* Dates:
+ 0 - Dia 18 18:00
+ 1 - Dia 19 11:00
+ 2 - Dia 19 17:00
+ 3 - Dia 20 11:00
+ 4 - Dia 20 16:00
+*/
+[{
+  "system": "pathfinder",
+  "title": "El Castillo Maldito",
+  "image": "/images/rol/pathfinder.jpeg",
+  "date": "2019-10-18 18:00",
+  "url": "",
+  "description": "Un grupo de héroes tendrá que proteger un pueblo y acabar con un malvado nigromante."
+}, {
+  "system": "yggdrassil",
+  "title": "La Venganza del Clan Wulfstan",
+  "image": "/images/rol/yggdrassil.jpg",
+  "date": "2019-10-19 11:00",
+  "url": "",
+  "description": "Movidos por la muerte de su Jarl, un grupo de vikingos parte a lo desconocido para cumplir su venganza o morir en el intento."
+}, {
+  "system": "magissa",
+  "title": "Dragones & Mazorcas",
+  "image": "/images/rol/magissa.jpg",
+  "date": "2019-10-19 11:00",
+  "url": "", // "https://drive.google.com/open?id=1Z2jbWq2XF8KkUC0RrF7YnpczlgQ3dH_OAijuUd52bK0",
+  "description": "La pequeña Cucumber, una de las niñas que vive en la villa de Narán, está muy asustada. Desde lo que pasó con el jarro de Pandora, ella y su hermano están solos en su granja esperando que vuelvan sus padres, pero ahora no se atreve a volver allí. Según cuenta, desde hace dos noches se escuchan ruidos extraños y dice haber visto unas sombras moverse por el rabillo del ojo. Debido a todo este susto se ha ido corriendo al pueblo con la esperanza de que sus amigos le ayuden. Los aventureros tendrán la oportunidad de ayudar a la niña inspeccionando la granja donde vive."
+}, {
+  "system": "dungeons_dragons",
+  "title": "Dungeons & Dragons - Stranger Things",
+  "image": "/images/rol/stranger_things.jpg",
+  "date": "2019-10-18 18:00",
+  "url": "https://docs.google.com/forms/d/1X7O3C2o6oaXBV3QPN1_gDv77PGA0tXwQyIQfGss4aVo",
+  "description": "En este nuevo Dungeons & Dragons revivirás la aventura que juegan los protagonistas de Stranger Things durante el primer episodio de la serie."
+}, {
+  "system": "monsterkit",
+  "title": "En la guarida de los Gamusinos",
+  "image": "/images/rol/monsterkit.jpeg",
+  "date": "2019-10-19 11:00",
+  "url": "https://docs.google.com/forms/d/1V90Y-fY5HDhvD0vdnL89umkWIHBgiXGViNIDvf2aY_c/viewform",
+  "description": "Los gamusinos han robado el calcetín favorito de nuestro amigo el monstruo Federico. Federico es un monstruo muy longevo (viejo), de más de 100 años, así que no puede ir a buscarlo porque le duelen las rodillas si anda mucho, y tardaría mucho con su bastón. Así que nos ha pedido que vayamos a buscarlo en su lugar. El monstruo Federico no puede dormir sin su calcetín; es uno grande, de rombos, tiene un agujero en un dedo y huele a queso roquefort, pero es su favorito. ¿Ayudaremos a Federico a recuperar su calcetín?"
+}, {
+  "system": "rats_in_the_walls",
+  "title": "La maldición de la Casa Corbitt",
+  "image": "/images/rol/sotano.jpg",
+  "date": "2019-10-19 17:00",
+  "url": "https://docs.google.com/forms/d/1UE2xpDI8ViGSRQb_ykf93rd1yFivZAQiwsgDpCcD3IE",
+  "description": "Un promotor inmobiliario compra una antigua mansión de estilo colonial en Providence a un precio bajísimo. Esto se debe a que todos los inquilino en los últimos 70 años han terminado locos, enfermos, desaparecidos o muertos en extrañas circunstancias y por ello nadie quiere alquilar la residencia Corbitt. <br/>Nervioso ante la perspectiva de que su negocio se vaya al traste, el promotor ha contratado a un grupo de investigadores que deberán certificar que no ocurre nada malo en la casa."
+}, {
+  "system": "numenerea",
+  "title": "El Beale de Boregal",
+  "image": "/images/rol/numenerea.jpg",
+  "date": "2019-10-19 17:00",
+  "url": "https://docs.google.com/forms/d/1_dtqQ0WIry1a9P8YCnL1GxrVjqTHClLC_MqP61VnSN4",
+  "description": "Partida de iniciación al sistema de Numenerea.<br />Viaja al Noveno Mundo, un lugar donde maravillas de una civilización desaparecida proporcionan artilugios <i>mágicos</i> a sus habitantes."
+}, {
+  "system": "dungeon_hack",
+  "title": "La vergüenza del Héroe",
+  "image": "/images/rol/dungeon_hack.png",
+  "date": "2019-10-20 11:00",
+  "url": "https://docs.google.com/forms/d/1JgJkcGuGMFFDOM-IJf39GMC_hBhRrJSPeTbt_eF6z90",
+  "description": "Los personajes se han desplazado a Ham, una villa aislada y venida a menos, atraídos por las noticias en las que se asegura que los vecinos han reunido una buena bolsa de oro para contratar mercenarios."
+}, {
+  "system": "monsterkit",
+  "title": "En busca de los desaparecidos",
+  "image": "/images/rol/monsterkit.jpeg",
+  "date": "2019-10-19 17:00",
+  "url": "https://docs.google.com/forms/d/1YYEeEinOdwg8wf0ZmWj1o65RZNZVVTAeEV9Tw3-ffZU/viewform?edit_requested=true",
+  "description": "La Cárcel para Monstruos Pilluelos (CAMOP), donde se quedan encerrados unos días los monstruos que no han sido buenos (hasta que se tranquilizan un poco), ha informado de que se han escapado del centro algunos monstruos y que se han escondido en las instalaciones de un colegio. Nos han pedido ayuda para buscarlos y llevarlos de vuelta al CAMOP. Tenemos que buscarlos y arrestarlos con la red caza-monstruos que nos han prestado. Vamos a buscarlos un sábado por la tarde, que no hay clases. Tan solo está el conserje Wilfredo, su mujer Catalina y su perro Firulais. ¡Tenemos que intentar que no nos vean y ser muy sigilosos! ¿Conseguiremos encontrar a los cuatro monstruitos traviesos antes de que nos descubran?"
+}, {
+  "system": "erdd",
+  "title": "La casa del Embajador",
+  "image": "/images/rol/erdd.jpg",
+  "date": "2019-10-18 18:00",
+  "url": "https://docs.google.com/forms/d/15aXhwtTOSjzIH3IP5-1yTNEbCdss6jOrWez0J2P3BZo/viewform",
+  "description": "Un extraño suceso ha tenido lugar en la embajada mida en Antalare, uno en el que solo nuestros aventureros podrán averiguar qué está pasando tras la desaparición del anterior embajador, ¿puede estar la casa encantada?"
+}, {
+  "system": "erdd",
+  "title": "La casa del Embajador",
+  "image": "/images/rol/erdd.jpg",
+  "date": "2019-10-19 11:00",
+  "url": "https://docs.google.com/forms/d/14Vq-ZJnMgPXp5SVm3eI6dmyBrkwT-VeL2jSqV3jx_Qk/viewform",
+  "description": "Un extraño suceso ha tenido lugar en la embajada mida en Antalare, uno en el que solo nuestros aventureros podrán averiguar qué está pasando tras la desaparición del anterior embajador, ¿puede estar la casa encantada?"
+}, {
+  "system": "dungeons_dragons",
+  "title": "Dungeons & Dragons",
+  "image": "/images/rol/dungeons_dragons.jpeg",
+  "date": "2019-10-19 17:00",
+  "url": "https://docs.google.com/forms/d/1kjwzF76XIrYTNg9jyzAVaRaVjsqrZpFyzJsJkcO02lE/viewform",
+  "description": ""
+}, {
+  "system": "erdd",
+  "title": "La casa del Embajador",
+  "image": "/images/rol/erdd.jpg",
+  "date": "2019-10-20 11:00",
+  "url": "https://docs.google.com/forms/d/15aWCh4AHtRW-AgkG1w6QEsH3iCBnB3uwoVvLgUIUtYg/viewform",
+  "description": "Un extraño suceso ha tenido lugar en la embajada mida en Antalare, uno en el que solo nuestros aventureros podrán averiguar qué está pasando tras la desaparición del anterior embajador, ¿puede estar la casa encantada?"
+}, {
+  "system": "7mar",
+  "title": "7º mar",
+  "image": "/images/rol/7mar.jpeg",
+  "date": "2019-10-20 16:00",
+  "url": "https://docs.google.com/forms/d/1XPjtEXdzkwlDk1Faiz_s_J07BBhfqJ9IY44FuIesoHU",
+  "description": ""
+}]

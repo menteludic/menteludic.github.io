@@ -1,0 +1,25 @@
+[{
+  "name": "Portal Juegos",
+  "email": "",
+  "image": "/images/shop/portal_juegos.png",
+  "url": "http://www.portaljuegos.es/",
+  "description": ""
+}, {
+  "name": "Alquimia Juegos",
+  "email": "alquimiajuegos@gmail.com",
+  "image": "/images/shop/alquimia.png",
+  "url": "https://alquimiajuegos.com/",
+  "description": ""
+}, {
+  "name": "Brossvinyl",
+  "email": "info@brosvinyl.com",
+  "image": "/images/shop/brosvinyl.png",
+  "url": "https://brosvinyl.com/",
+  "description": ""
+}, {
+  "name": "Planet Ocio",
+  "email": "",
+  "image": "/images/shop/planet_ocio.png",
+  "url": "https://www.ebay.es/str/planetociobluraydvdjuegos",
+  "description": ""
+}]

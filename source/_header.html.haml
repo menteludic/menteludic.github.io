@@ -1,0 +1,14 @@
+%meta{ charset: 'utf-8' }
+%meta{ 'http-equiv': 'X-UA-Compatible', content: 'IE=edge;chrome=1' }
+%meta{ 'http-equiv': 'Content-Language', content: 'es' }
+%meta{ name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0' }
+%link{ rel:"icon", href: "/images/logo.ico" }
+
+%title= "Menteludic - Juegos, Rol, Comic, ..."
+- # = feed_tag(:atom, "#{blog.options.prefix.to_s}/feed.xml", title: 'Atom Feed')
+
+%script{src: 'https://code.jquery.com/jquery-3.4.1.min.js', integrity: 'sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=', crossorigin: 'anonymous' }
+%link{rel: 'stylesheet', type: 'text/css', href: 'https://fonts.googleapis.com/css?family=Rubik'}
+= stylesheet_link_tag 'all'
+= javascript_include_tag 'all'
+= google_analytics_tag

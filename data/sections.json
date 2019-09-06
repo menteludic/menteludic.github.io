@@ -1,0 +1,49 @@
+[{
+  "title": "Partidas de Rol",
+  "image": "/images/dice-1539658_1280.jpg",
+  "link": {
+    "url": "/rol",
+    "label": "Suscríbete a las partidas"
+  },
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a aliquet nunc. Mauris laoreet arcu suscipit turpis eleifend hendrerit. Ut suscipit tortor nec ultrices efficitur. Sed accumsan, ex sed tincidunt ornare, massa ante ultricies lectus, nec ultricies nunc orci in ligula"
+}, {
+  "title": "Editoriales",
+  "image": "/images/type-1161949_1280.jpg",
+  "link": {
+    "url": "/editorial",
+    "label": "Editoriales asistentes"
+  },
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a aliquet nunc. Mauris laoreet arcu suscipit turpis eleifend hendrerit. Ut suscipit tortor nec ultrices efficitur. Sed accumsan, ex sed tincidunt ornare, massa ante ultricies lectus, nec ultricies nunc orci in ligula"
+}, {
+  "title": "Ilustradores",
+  "image": "/images/hand-1515910_1280.jpg",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a aliquet nunc. Mauris laoreet arcu suscipit turpis eleifend hendrerit. Ut suscipit tortor nec ultrices efficitur. Sed accumsan, ex sed tincidunt ornare, massa ante ultricies lectus, nec ultricies nunc orci in ligula"
+}, {
+  "title": "Asociaciones",
+  "image": "/images/idea-2123972_1280.jpg",
+  "link": {
+    "url": "/society",
+    "label": "Asociaciones asistentes"
+  },
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a aliquet nunc. Mauris laoreet arcu suscipit turpis eleifend hendrerit. Ut suscipit tortor nec ultrices efficitur. Sed accumsan, ex sed tincidunt ornare, massa ante ultricies lectus, nec ultricies nunc orci in ligula"
+}, {
+  "title": "Tiendas",
+  "image": "/images/shop.jpg",
+  "link": {
+    "url": "/shop",
+    "label": "Tiendas asistentes"
+  },
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a aliquet nunc. Mauris laoreet arcu suscipit turpis eleifend hendrerit. Ut suscipit tortor nec ultrices efficitur. Sed accumsan, ex sed tincidunt ornare, massa ante ultricies lectus, nec ultricies nunc orci in ligula"
+}, {
+  "title": "Charlas y Presentaciones",
+  "image": "/images/paper-3033204_1280.jpg",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a aliquet nunc. Mauris laoreet arcu suscipit turpis eleifend hendrerit. Ut suscipit tortor nec ultrices efficitur. Sed accumsan, ex sed tincidunt ornare, massa ante ultricies lectus, nec ultricies nunc orci in ligula"
+}, {
+  "title": "Cosplayers",
+  "image": "/images/cosplay-980212_1280.jpg",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a aliquet nunc. Mauris laoreet arcu suscipit turpis eleifend hendrerit. Ut suscipit tortor nec ultrices efficitur. Sed accumsan, ex sed tincidunt ornare, massa ante ultricies lectus, nec ultricies nunc orci in ligula",
+  "link": {
+    "url": "/cosplay",
+    "label": "Cosplayers confirmadas"
+  }
+}]
